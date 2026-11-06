@@ -8,6 +8,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Cursor from "@/components/Cursor";
 import RevealObserver from "@/components/RevealObserver";
+// import Tour from "@/components/Tour";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Footer />
       <Cursor />
       <RevealObserver />
+      {/* <Tour /> */}
     </>
   );
 }
