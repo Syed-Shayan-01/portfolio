@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         {/* sets the saved theme before first paint (no flash) and the js flag; content stays visible for crawlers / no-JS */}
         <script dangerouslySetInnerHTML={{ __html: "(function(){var d=document.documentElement,t='dark';try{t=localStorage.getItem('theme')||'dark'}catch(e){}d.dataset.theme=t==='light'?'light':'dark';d.classList.add('js')})()" }} />
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         <a href="#about" className="skip">Skip to content</a>
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

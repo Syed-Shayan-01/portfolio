@@ -57,7 +57,7 @@ a {
   padding: 0 clamp(18px, 4vw, 56px);
 }
 section {
-  padding: 72px 0;
+  padding: 56px 0; 
 }
 .label {
   font-size: 13px;
@@ -210,13 +210,13 @@ header.s {
 }
 /* hero */
 #home {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: calc(100vh - 64px); 
+  min-height: calc(100dvh - 64px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; 
   align-items: stretch;
-  padding: 92px 0 28px;
+  padding: 84px 0 20px;
   position: relative;
   background-image:
     linear-gradient(var(--bd) 1px, transparent 1px),
@@ -473,7 +473,7 @@ h1 {
 .scroll {
   position: relative;
   align-self: center;
-  margin-top: 40px;
+  margin-top: 20px; 
   font-size: 11px;
   letter-spacing: 0.2em;
   color: var(--tx2);
@@ -482,7 +482,7 @@ h1 {
   align-items: center;
   gap: 8px;
   z-index: 2;
-  padding: 6px 12px;
+  padding: 4px 12px;
   transition: color 0.2s;
 }
 .scroll:hover {
@@ -734,7 +734,6 @@ h1 {
   padding: 22px;
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 .num {
   font-size: 12px;
