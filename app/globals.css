@@ -57,7 +57,7 @@ a {
   padding: 0 clamp(18px, 4vw, 56px);
 }
 section {
-  padding: 56px 0; 
+  padding: 72px 0;
 }
 .label {
   font-size: 13px;
@@ -75,7 +75,7 @@ h3 {
   letter-spacing: -0.025em;
 }
 h2 {
-  font-size: clamp(34px, 4.4vw, 56px);
+  font-size: clamp(30px, 4.4vw, 54px);
   font-weight: 800;
 }
 .lead {
@@ -210,13 +210,13 @@ header.s {
 }
 /* hero */
 #home {
-  min-height: calc(100vh - 64px); 
-  min-height: calc(100dvh - 64px);
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: center;
   align-items: stretch;
-  padding: 84px 0 20px;
+  padding: 92px 0 28px;
   position: relative;
   background-image:
     linear-gradient(var(--bd) 1px, transparent 1px),
@@ -239,7 +239,7 @@ header.s {
   align-items: center;
 }
 h1 {
-  font-size: clamp(44px, 5.6vw, 75px);
+  font-size: clamp(44px, 5.6vw, 66px);
   font-weight: 800;
 }
 .hero p {
@@ -249,7 +249,7 @@ h1 {
 }
 .hero p.in {
   color: var(--soft);
-  font-size: 19px;
+  font-size: 18px;
 }
 .cta {
   display: flex;
@@ -261,7 +261,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: 15px;
 }
 .soc a {
   display: inline-flex;
@@ -295,7 +295,8 @@ h1 {
   background: var(--bg2);
   border: 1px solid var(--bd);
   border-radius: 14px;
-  padding: 16px;
+  padding: 17px;
+  width: fit-content;
   animation: rise 0.9s ease both;
 }
 .dash .bar {
@@ -473,7 +474,7 @@ h1 {
 .scroll {
   position: relative;
   align-self: center;
-  margin-top: 20px; 
+  margin-top: 40px;
   font-size: 11px;
   letter-spacing: 0.2em;
   color: var(--tx2);
@@ -482,7 +483,7 @@ h1 {
   align-items: center;
   gap: 8px;
   z-index: 2;
-  padding: 4px 12px;
+  padding: 6px 12px;
   transition: color 0.2s;
 }
 .scroll:hover {
@@ -734,6 +735,7 @@ h1 {
   padding: 22px;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .num {
   font-size: 12px;
